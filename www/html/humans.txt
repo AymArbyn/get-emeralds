@@ -1,0 +1,19 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Arbyn Acosta -- Software Engineer
+    Mitchie Adanza -- Design Engineer
+    Chadbert Nikko Aquino -- Design Engineer
+    Christopher John Mata -- Software Engineer
+    Paul Harries Nunag -- Hardware Engineer
+
+# THANKS
+
+    Engr. Mark Anthony Aseoche
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5
+    Apache Server Configs, jQuery, Modernizr, Normalize.css
