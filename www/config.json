@@ -1,0 +1,10 @@
+{
+    "database": {
+        "host": "localhost",
+        "name": "emeralds",
+        "username": "root",
+        "password": "18264"
+    },
+    "linux_python": "/usr/bin/python",
+    "windows_python": "C:/Users/\"Arbyn Acosta\"/AppData/Local/Programs/Python/Python35/python"
+}
