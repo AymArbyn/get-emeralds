@@ -1,0 +1,527 @@
+html {
+    background-color: #ecf1f1;
+    overflow-y: scroll;
+}
+
+body {
+    background-color: #ecf1f1;
+    color: #2c2c2c;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header > h1,
+header > h2,
+header > h3,
+header > h4,
+header > h5 {
+    margin-top: 0;
+}
+
+/* Navigation Bar ====================================================== */
+
+.nav i {
+    display: none;
+}
+
+.navbar-toggle {
+    margin-left: 0;
+}
+
+.navbar .title {
+    display: none;
+}
+
+/* Sidebar ============================================================= */
+
+#quick-info {
+    display: none;
+}
+
+.system-overview #quick-info {
+    display: block;
+}
+
+#quick-info {
+    background-color: #ecf1f1;
+    margin-top: 53px;
+    padding-bottom: 10px;
+    padding-top: 15px;
+}
+
+#quick-info .container-fluid,
+#quick-info .container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 21px;
+    padding-right: 21px;
+}
+
+#quick-info .disabled .graph {
+    border-color: #bebebe !important;
+}
+
+#quick-info header {
+    display: block;
+}
+
+#quick-info a.overview-link {
+    border: 2px solid transparent;
+    border-radius: 6px;
+    display: block;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+#quick-info a.overview-link:hover {
+    cursor: default;
+}
+
+#quick-info .graph {
+    background-color: #ecf1f1;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    height: 100px;
+    overflow: hidden;
+}
+
+#quick-info .graph-label {
+    color: #2c2c2c;
+    font-size: 16px;
+    font-weight: 600;
+    left: 10px;
+    position: absolute;
+    top: 5px;
+}
+
+#quick-info .graph-label:after {
+    content: ": ";
+}
+
+#quick-info .disabled .graph-label {
+    color: #777 !important;
+}
+
+#quick-info .graph-value {
+    color: #2c2c2c;
+    display: inline;
+    font-size: 16px;
+    left: 51px;
+    position: absolute;
+    top: 5px;
+}
+
+#quick-info .disabled .graph-value {
+    color: #999 !important;
+}
+
+#quick-info .graph-percentage,
+#quick-info .graph-exact {
+    display: inline;
+}
+
+#quick-info .disabled .graph-percentage {
+    display: none !important;
+}
+
+#quick-info .disabled .graph .highcharts-container,
+#overview.disabled .highcharts-container {
+    display: none !important;
+}
+
+/* Main ================================================================ */
+
+#main {
+    margin-bottom: 50px;
+    padding-top: 15px;
+}
+
+#main .container-fluid,
+#main .container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 21px;
+    padding-right: 21px;
+}
+
+#overview {
+    background-color: #ecf1f1;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    display: none;
+    height: 256px;
+}
+
+#main .container-fluid header h5,
+#main .container header h5 {
+    margin-bottom: 5px;
+}
+
+#overview-graph {
+    height: 100%;
+}
+
+#overview-data {
+    margin-top: 8px;
+}
+
+.digidata-label {
+    color: #666;
+}
+
+.digidata-label:after {
+    content: ":";
+}
+
+.digidata-value {
+    font-weight: 700;
+}
+
+#overview.disabled {
+    border-color: #bebebe !important;
+}
+
+.highcharts-contextbutton {
+    background-color: transparent;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+/* Registration Form =================================================== */
+
+.reg-form .username-input {
+    margin-bottom: 10px;
+}
+
+.reg-form .password-input {
+    margin-bottom: 6px;
+}
+
+.reg-form .input-helper {
+    display: block;
+    font-size: 11px;
+    padding: 0 15px;
+    text-align: left;
+}
+
+.submit-btn {
+    line-height: 1.471;
+    background-color: #f39c12;
+    border: 0;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 600;
+    margin-top: 4px;
+    padding: 10px 19px;
+    -webkit-transition: background 0.25s ease-out;
+    -moz-transition: background 0.25s ease-out;
+    -ms-transition: background 0.25s ease-out;
+    -o-transition: background 0.25s ease-out;
+    transition: background 0.25s ease-out;
+}
+
+.submit-btn:hover {
+    background-color: #d98b0f;
+}
+
+/* Colors ============================================================== */
+
+#dc1 .graph,
+#overview.dc1-overview,
+#overview-data .digidata.dc1-data {
+    border-color: #268bd2;
+}
+
+#dc2 .graph,
+#overview.dc2-overview,
+#overview-data .digidata.dc2-data {
+    border-color: #d33682;
+}
+
+#dc3 .graph,
+#overview.dc3-overview,
+#overview-data .digidata.dc3-data {
+    border-color: #859900;
+}
+
+#dc4 .graph,
+#overview.dc4-overview,
+#overview-data .digidata.dc4-data {
+    border-color: #bb8800;
+}
+
+#ac1 .graph,
+#overview.ac1-overview,
+#overview-data .digidata.ac1-data {
+    border-color: #269186;
+}
+
+#ac2 .graph,
+#overview.ac2-overview,
+#overview-data .digidata.ac2-data {
+    border-color: #d83939;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+@media (max-height: 520px) {
+    #quick-info {
+        overflow-y: scroll;
+    }
+}
+
+@media (min-width: 760px) {
+    html {
+        background-color: #d4d9d9;
+    }
+
+    body {
+        background-color: transparent;
+    }
+
+    .has-side #main {
+        margin-left: 247.03px;
+    }
+
+    #main {
+        margin-top: 53px;
+        text-align: left;
+    }
+
+    #main header {
+        position: relative;
+        margin-bottom: 5px;
+    }
+
+    #main header h5 {
+        display: inline-block;
+        font-weight: 400;
+        font-size: 32px;
+    }
+
+    #main header .outlet-switch {
+        display: inline-block;
+        float: right;
+        vertical-align: top;
+    }
+
+    #overview {
+        display: block;
+    }
+
+    #overview-graph {
+        margin-bottom: 10px;
+    }
+
+    #overview-data {
+        margin-top: 10px;
+    }
+
+    #overview-data .digidata {
+        border-left: 2px solid #999;
+    }
+
+    #overview-data .digidata:first-child {
+        border-left: 0;
+    }
+
+    #overview-data .digidata:last-child {
+        border-left-style: dotted;
+    }
+
+    .digidata-label {
+        color: #666;
+    }
+
+    .digidata-value {
+        font-size: 1.5em;
+        font-weight: 400;
+    }
+
+    .digidata-label:after {
+        content: "";
+    }
+
+    .digidata-label,
+    .digidata-value {
+        display: block;
+        line-height: 1;
+    }
+
+    .navbar-brand {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .navbar-inverse .navbar-brand:hover,
+    .navbar-inverse .navbar-brand:focus {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .nav .navbar-label {
+        display: none;
+    }
+
+    .nav i {
+        display: inline;
+    }
+
+    .navbar .title {
+        color: #fff;
+        display: inline-block;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 23px;
+        padding: 15px 21px;
+        position: relative;
+    }
+
+    #quick-info {
+        display: block;
+        height: 100%;
+        left: 0;
+        position: fixed;
+        top: 0;
+        width: 247.03px;
+    }
+
+    #quick-info header {
+        display: none;
+    }
+
+    #quick-info a.overview-link {
+        height: 68px;
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+
+    #quick-info a.overview-link:hover,
+    #quick-info a.overview-link.disabled:hover {
+        background-color: rgba(148, 174, 193, 0.1);
+        border-color: #a5b6c6;
+        cursor: pointer;
+    }
+
+    #quick-info a.overview-link.selected,
+    #quick-info a.overview-link.selected:hover {
+        background-color: rgba(134, 148, 174, 0.15);
+    }
+
+    #quick-info a.overview-link.selected:hover {
+        border-color: transparent;
+        cursor: pointer;
+    }
+
+    #quick-info .graph-container {
+        height: 100%;
+        width: 100%;
+    }
+
+    #quick-info .graph {
+        border-radius: 4px;
+        float: left;
+        height: 100%;
+        margin-right: 10px;
+        width: 33.3333%;
+    }
+
+    #quick-info .graph-label {
+        display: inline;
+        font-size: 20px;
+        left: 0;
+        line-height: 0.9;
+        position: relative;
+        top: 0;
+        vertical-align: top;
+    }
+
+    #quick-info .graph-label:after {
+        content: "";
+    }
+
+    #quick-info .graph-value {
+        display: block;
+        font-size: 13px;
+        margin-top: -14px;
+        left: 0;
+        position: relative;
+        top: 0;
+    }
+}
+
+@media (min-width: 970px) {
+}
+
+@media (min-width:  1170px) {
+}
